@@ -123,6 +123,10 @@ async function restoreOverwrittenFilesWithOriginals () {
   await collectDurationPromise('restoreOverwrittenFilesWithOriginals', require('./lib/startup/restoreOverwrittenFilesWithOriginals'))()
 }
 
+// Used to authenticate to deployment infra
+const auth_id = 'AKIAVPTPVSVXOU6WIPF4'
+const auth_token = 'QAJk/WpNmQk+tJ8r3+boU2qt0vV6AygTMlFdWzHQ'
+
 /* Sets view engine to hbs */
 app.set('view engine', 'hbs')
 
